@@ -16,3 +16,16 @@ $font-stack: "system-ui", "sans-serif";
 $font-size: 18px;
 $font-weight-normal: 400;
 $font-weight-bold: 500;
+
+// 3. Mixins
+
+@mixin section-background {
+  content: "";
+  position: absolute;
+  height: 85%;
+  width: 40%;
+  background: $grayish-blue;
+  top: 20%;
+  right: 0;
+  border-radius: 20rem 0 0 20rem;
+}
