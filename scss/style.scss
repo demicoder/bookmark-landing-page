@@ -139,3 +139,51 @@ body {
     @include section-background;
   }
 }
+
+.features {
+  .section {
+    &__title {
+      text-align: center;
+      color: $dark-accent;
+    }
+
+    &__desc {
+      text-align: center;
+    }
+  }
+
+  .tabs {
+    &__header {
+      display: flex;
+      width: 65%;
+      text-align: center;
+      margin: auto;
+      align-items: center;
+      margin-bottom: 5rem;
+
+      h3 {
+        margin: auto;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+      }
+
+      h3 a {
+        display: block;
+        height: 100%;
+        padding: 1.4rem 0;
+        transition: 0.4s ease-out;
+        color: $grayish-blue-neutral;
+        &:hover {
+          color: $danger;
+        }
+      }
+
+      &--active {
+        a {
+          color: $dark-accent !important;
+        }
+        border-bottom: 4px solid $danger !important;
+      }
+    }
+  }
+}

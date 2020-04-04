@@ -181,4 +181,53 @@ body {
   right: 0;
   border-radius: 20rem 0 0 20rem;
 }
+
+.features .section__title {
+  text-align: center;
+  color: #252b46;
+}
+
+.features .section__desc {
+  text-align: center;
+}
+
+.features .tabs__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65%;
+  text-align: center;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+}
+
+.features .tabs__header h3 {
+  margin: auto;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.features .tabs__header h3 a {
+  display: block;
+  height: 100%;
+  padding: 1.4rem 0;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  color: #9194a1;
+}
+
+.features .tabs__header h3 a:hover {
+  color: #fa5757;
+}
+
+.features .tabs__header--active {
+  border-bottom: 4px solid #fa5757 !important;
+}
+
+.features .tabs__header--active a {
+  color: #252b46 !important;
+}
 /*# sourceMappingURL=style.css.map */
