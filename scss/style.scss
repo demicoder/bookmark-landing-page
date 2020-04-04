@@ -643,4 +643,30 @@ body {
       }
     }
   }
+
+  .main-footer {
+    .row,
+    &__logo {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__nav,
+    &__social-icons,
+    &__logo {
+      margin-bottom: 0 0 2rem 0;
+      text-align: center;
+    }
+
+    &__nav li {
+      display: block;
+      margin: 1.5rem 0;
+    }
+
+    &__social-icons {
+      p {
+        margin: 1rem;
+      }
+    }
+  }
 }
