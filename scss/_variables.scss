@@ -1,0 +1,17 @@
+// 1. Colors
+$grayish-blue: hsl(231, 69%, 60%);
+$soft-red: hsl(0, 94%, 66%);
+$grayish-blue-neutral: hsl(229, 8%, 60%);
+$dark-blue: hsl(229, 31%, 21%);
+
+$accent: $grayish-blue;
+$danger: $soft-red;
+$neutral: $grayish-blue-neutral;
+$dark-accent: $dark-blue;
+
+// 2. Typograpgy
+// (https://fonts.google.com/specimen/Rubik)
+$font-stack: "system-ui", "sans-serif";
+// $font-stack: "Rubik", "sans-serif";
+$font-weight-normal: 400;
+$font-weight-bold: 500;
