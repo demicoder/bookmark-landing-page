@@ -68,12 +68,14 @@
       </div>
 
       <div class="tabs">
-        <div class="tabs__header">
-          <h3 class="tabs__header--active">
-            <a href="#">Simple Bookmarking</a>
-          </h3>
-          <h3><a href="#">Speedy Searching</a></h3>
-          <h3><a href="#">Easy Sharing</a></h3>
+        <div class="row">
+          <div class="tabs__header">
+            <h3 class="tabs__header--active">
+              <a href="#">Simple Bookmarking</a>
+            </h3>
+            <h3><a href="#">Speedy Searching</a></h3>
+            <h3><a href="#">Easy Sharing</a></h3>
+          </div>
         </div>
 
         <div class="tabs__content">
@@ -158,36 +160,58 @@
     <!-- Features end -->
 
     <!-- Download start -->
-    <div class="">
+    <div class="section download">
       <div class="row">
-        <h2>Download the extension</h2>
-        <p>
-          We’ve got more browsers in the pipeline. Please do let us know if
-          you’ve got a favourite you’d like us to prioritize.
-        </p>
-
-        <!-- Broswer Card 1-->
-        <div class="browser__card browser__card--1">
-          <img src="images/logo-chrome.svg" alt="Google Chrome" />
-          <h3>Add to Chrome</h3>
-          <p>Minimum version 62</p>
-          <p><a href="#">Add & Install Extension</a></p>
+        <div class="download__content">
+          <h2 class="section__title">Download the extension</h2>
+          <p class="section__desc">
+            We’ve got more browsers in the pipeline. Please do let us know if
+            you’ve got a favourite you’d like us to prioritize.
+          </p>
         </div>
 
-        <!-- Broswer Card 2-->
-        <div class="browser__card browser__card--2">
-          <img src="images/logo-firefox.svg" alt="Mozilla Firefox" />
-          <h3>Add to Firefox</h3>
-          <p>Minimum version 55</p>
-          <p><a href="#">Add & Install Extension</a></p>
-        </div>
+        <div class="browser">
+          <!-- Broswer Card 1-->
+          <div class="browser__card browser__card--1">
+            <div>
+              <img src="images/logo-chrome.svg" alt="Google Chrome" />
+              <h3>Add to Chrome</h3>
+              <p>Minimum version 62</p>
+            </div>
 
-        <!-- Broswer Card 3-->
-        <div class="browser__card browser__card--3">
-          <img src="images/logo-opera.svg" alt="Opera" />
-          <h3>Add to Firefox</h3>
-          <p>Minimum version 46</p>
-          <p><a href="#">Add & Install Extension</a></p>
+            <div class="browser__card--divider"></div>
+            <div class="browser__card--link">
+              <a href="#" class="btn btn__primary">Add & Install Extension</a>
+            </div>
+          </div>
+
+          <!-- Broswer Card 2-->
+          <div class="browser__card browser__card--2">
+            <div>
+              <img src="images/logo-firefox.svg" alt="Mozilla Firefox" />
+              <h3>Add to Firefox</h3>
+              <p>Minimum version 55</p>
+            </div>
+
+            <div class="browser__card--divider"></div>
+
+            <div class="browser__card--link">
+              <a href="#" class="btn btn__primary">Add & Install Extension</a>
+            </div>
+          </div>
+
+          <!-- Broswer Card 3-->
+          <div class="browser__card browser__card--3">
+            <div>
+              <img src="images/logo-opera.svg" alt="Opera" />
+              <h3>Add to Opera</h3>
+              <p>Minimum version 46</p>
+            </div>
+            <div class="browser__card--divider"></div>
+            <div class="browser__card--link">
+              <a href="#" class="btn btn__primary">Add & Install Extension</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
