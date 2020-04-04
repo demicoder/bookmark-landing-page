@@ -182,6 +182,10 @@ body {
   border-radius: 20rem 0 0 20rem;
 }
 
+.features {
+  margin-bottom: 3rem;
+}
+
 .features .section__title {
   text-align: center;
   color: #252b46;
@@ -189,6 +193,10 @@ body {
 
 .features .section__desc {
   text-align: center;
+}
+
+.features .tabs {
+  position: relative;
 }
 
 .features .tabs__header {
@@ -229,5 +237,64 @@ body {
 
 .features .tabs__header--active a {
   color: #252b46 !important;
+}
+
+.features .tabs .tab {
+  margin-bottom: 2rem;
+  z-index: 10;
+  position: relative;
+}
+
+.features .tabs .tab:after {
+  left: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  content: "";
+  position: absolute;
+  height: 85%;
+  width: 40%;
+  background: #5368df;
+  top: 20%;
+  right: 0;
+  border-radius: 20rem 0 0 20rem;
+}
+
+.features .tabs .tab__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.features .tabs .tab__img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 2rem;
+}
+
+.features .tabs .tab__img img {
+  display: block;
+  width: 100%;
+}
+
+.features .tabs .tab__body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 5rem;
+}
+
+.features .tabs .tab__title {
+  font-size: 200%;
+  color: #252b46;
+}
+
+.features .tabs .tab__text {
+  margin: 1rem 0;
 }
 /*# sourceMappingURL=style.css.map */
