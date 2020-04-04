@@ -19,9 +19,15 @@ a {
   color: inherit;
 }
 
+input {
+  outline: none;
+  font-family: inherit;
+}
+
 button,
 input[type="submit"] {
   cursor: pointer;
+  font-family: inherit;
 }
 
 body {
@@ -434,5 +440,71 @@ body {
   line-height: 2;
   padding: 2rem 0;
   display: none;
+}
+
+.contact {
+  background: #5368df;
+  color: #fff;
+}
+
+.contact .row {
+  text-align: center;
+  padding: 5rem 0;
+  line-height: 1.5;
+  width: 35%;
+}
+
+.contact h2 {
+  font-size: 200%;
+  margin: 2rem;
+}
+
+.contact__members {
+  font-size: 95%;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__form input {
+  display: block;
+}
+
+.contact__form input[type="email"] {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+  margin-right: 1rem;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.contact__form input[type="submit"] {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.contact__form input[type="submit"]:hover {
+  background: #fff;
+}
+
+.contact__form input[type="submit"]::-webkit-input-placeholder {
+  color: #9194a1;
+}
+
+.contact__form input[type="submit"]:-ms-input-placeholder {
+  color: #9194a1;
+}
+
+.contact__form input[type="submit"]::-ms-input-placeholder {
+  color: #9194a1;
+}
+
+.contact__form input[type="submit"]::placeholder {
+  color: #9194a1;
 }
 /*# sourceMappingURL=style.css.map */

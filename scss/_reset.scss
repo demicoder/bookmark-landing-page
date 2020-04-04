@@ -18,7 +18,13 @@ a {
   color: inherit;
 }
 
+input {
+  outline: none;
+  font-family: inherit;
+}
+
 button,
 input[type="submit"] {
   cursor: pointer;
+  font-family: inherit;
 }
