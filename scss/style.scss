@@ -87,6 +87,14 @@ body {
     justify-content: space-between;
   }
 
+  .menu-icon {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
   li {
     display: inline-block;
     margin-left: 3rem;
@@ -164,6 +172,13 @@ body {
   .tabs {
     position: relative;
     margin-bottom: 7rem;
+
+    &:after {
+      @include section-background;
+      left: 0;
+      transform: rotate(180deg);
+    }
+
     &__header {
       display: flex;
       width: 65%;
@@ -201,11 +216,7 @@ body {
       margin-bottom: 2rem;
       z-index: 10;
       position: relative;
-      &:after {
-        @include section-background;
-        left: 0;
-        transform: rotate(180deg);
-      }
+
       &__content {
         display: flex;
         align-items: center;
@@ -438,6 +449,197 @@ body {
             fill: $danger;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .row {
+    padding: 1rem 0;
+  }
+
+  .main-header {
+    margin-bottom: 0;
+    padding: 0 1.5rem;
+  }
+
+  .features {
+    .section__desc {
+      width: 80%;
+    }
+  }
+
+  .hero {
+    margin: auto;
+    .row {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &:after {
+      height: 30%;
+      width: 70%;
+      top: 10%;
+    }
+
+    &__content {
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    &__image {
+      display: block;
+      width: 100%;
+      img {
+        margin: auto;
+      }
+    }
+  }
+
+  .download {
+    &__content {
+      margin: 8rem 0rem 2rem 0;
+    }
+
+    .browser {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      margin: auto;
+      display: block;
+      &__card {
+        margin: auto;
+        display: block;
+        width: 100%;
+        margin-bottom: 2rem;
+        > div:first-child {
+          padding: 2rem 0;
+        }
+
+        &:first-child,
+        &:last-child {
+          margin: 0 0 2rem 0;
+        }
+      }
+    }
+  }
+
+  .contact {
+    .row {
+      width: 80%;
+    }
+  }
+
+  .section {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-right: 2rem;
+    &__desc {
+      width: 100%;
+    }
+  }
+
+  .faqs {
+    .question {
+      width: 100%;
+    }
+  }
+  .features {
+    .tabs {
+      .row {
+        padding: 0;
+      }
+
+      &:after {
+        display: none;
+      }
+
+      &__header {
+        width: 100%;
+      }
+
+      .tab {
+        &__content {
+          flex-direction: column;
+        }
+
+        &__title {
+          font-size: 150%;
+        }
+
+        &__body {
+          padding: 0;
+          text-align: center;
+        }
+
+        &__img {
+          padding: 0;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+
+  .main-footer {
+    .row {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  .main-header {
+    padding: 3rem;
+    margin-bottom: 0;
+
+    .main-nav {
+      display: none;
+    }
+
+    .menu-icon {
+      display: block;
+    }
+  }
+
+  .hero {
+    h1 {
+      font-size: 200%;
+    }
+
+    &__image {
+      text-align: center;
+      img {
+        width: 95%;
+        margin: auto;
+      }
+    }
+  }
+
+  .contact {
+    h2 {
+      font-size: 150%;
+    }
+
+    .row {
+      width: 95%;
+    }
+    &__form {
+      padding: 0 2rem;
+      flex-direction: column;
+      input {
+        flex: 1;
+        width: 100%;
+      }
+
+      input[type="email"] {
+        padding: 15px;
+      }
+
+      .btn {
+        margin-top: 0.5rem;
       }
     }
   }

@@ -122,6 +122,14 @@ body {
           justify-content: space-between;
 }
 
+.main-header .menu-icon {
+  display: none;
+}
+
+.main-header .mobile {
+  display: none;
+}
+
 .main-header li {
   display: inline-block;
   margin-left: 3rem;
@@ -218,6 +226,20 @@ body {
   margin-bottom: 7rem;
 }
 
+.features .tabs:after {
+  content: "";
+  position: absolute;
+  height: 85%;
+  width: 40%;
+  background: #5368df;
+  top: 20%;
+  right: 0;
+  border-radius: 20rem 0 0 20rem;
+  left: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .features .tabs__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,20 +284,6 @@ body {
   margin-bottom: 2rem;
   z-index: 10;
   position: relative;
-}
-
-.features .tabs .tab:after {
-  content: "";
-  position: absolute;
-  height: 85%;
-  width: 40%;
-  background: #5368df;
-  top: 20%;
-  right: 0;
-  border-radius: 20rem 0 0 20rem;
-  left: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .features .tabs .tab__content {
@@ -563,5 +571,166 @@ body {
 
 .main-footer__social-icons p svg:hover path {
   fill: #fa5757;
+}
+
+@media (max-width: 850px) {
+  .row {
+    padding: 1rem 0;
+  }
+  .main-header {
+    margin-bottom: 0;
+    padding: 0 1.5rem;
+  }
+  .features .section__desc {
+    width: 80%;
+  }
+  .hero {
+    margin: auto;
+  }
+  .hero .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero:after {
+    height: 30%;
+    width: 70%;
+    top: 10%;
+  }
+  .hero__content {
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  .hero__image {
+    display: block;
+    width: 100%;
+  }
+  .hero__image img {
+    margin: auto;
+  }
+  .download__content {
+    margin: 8rem 0rem 2rem 0;
+  }
+  .download .browser {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    display: block;
+  }
+  .download .browser__card {
+    margin: auto;
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .download .browser__card > div:first-child {
+    padding: 2rem 0;
+  }
+  .download .browser__card:first-child, .download .browser__card:last-child {
+    margin: 0 0 2rem 0;
+  }
+  .contact .row {
+    width: 80%;
+  }
+  .section {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-right: 2rem;
+  }
+  .section__desc {
+    width: 100%;
+  }
+  .faqs .question {
+    width: 100%;
+  }
+  .features .tabs .row {
+    padding: 0;
+  }
+  .features .tabs:after {
+    display: none;
+  }
+  .features .tabs__header {
+    width: 100%;
+  }
+  .features .tabs .tab__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .features .tabs .tab__title {
+    font-size: 150%;
+  }
+  .features .tabs .tab__body {
+    padding: 0;
+    text-align: center;
+  }
+  .features .tabs .tab__img {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  .main-footer .row {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 730px) {
+  .main-header {
+    padding: 3rem;
+    margin-bottom: 0;
+  }
+  .main-header .main-nav {
+    display: none;
+  }
+  .main-header .menu-icon {
+    display: block;
+  }
+  .hero h1 {
+    font-size: 200%;
+  }
+  .hero__image {
+    text-align: center;
+  }
+  .hero__image img {
+    width: 95%;
+    margin: auto;
+  }
+  .contact h2 {
+    font-size: 150%;
+  }
+  .contact .row {
+    width: 95%;
+  }
+  .contact__form {
+    padding: 0 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__form input {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+  }
+  .contact__form input[type="email"] {
+    padding: 15px;
+  }
+  .contact__form .btn {
+    margin-top: 0.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
