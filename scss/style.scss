@@ -7,25 +7,52 @@ body {
 
 // Utilities
 .row {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
 }
 
 .btn {
+  padding: 0.8rem 1.5rem;
+  color: #fff;
+  font-weight: $font-weight-bold;
+  transition: 0.4s ease-out;
+  display: inline-block;
+  border: {
+    radius: 5px;
+    width: 2px;
+    style: solid;
+  }
+
+  &:hover {
+    color: $accent;
+    border-color: $accent;
+    background: transparent;
+  }
+
   &__primary {
     background: $accent;
+    &:hover {
+      border-color: $accent;
+      color: $accent;
+    }
   }
 
   &__danger {
     background: $danger;
-    padding: 0.5rem 2rem;
-    border-radius: 5px;
-    color: #fff;
-    font-weight: $font-weight-bold;
-    border: 2px solid $danger;
     &:hover {
-      background: transparent;
+      border-color: $danger;
       color: $danger;
+    }
+  }
+
+  &__neutral {
+    background: #fff;
+    color: $neutral;
+    border: 2px solid transparent;
+
+    &:hover {
+      border: 2px solid $neutral;
+      color: $neutral;
     }
   }
 }
@@ -33,6 +60,7 @@ body {
 // Main Header
 .main-header {
   padding: 3rem;
+  margin-bottom: 2rem;
   .row {
     display: flex;
     align-items: center;
@@ -51,6 +79,39 @@ body {
     transition: 0.4s ease-out;
     &:hover {
       color: $danger;
+    }
+  }
+}
+// Main header end
+
+.hero {
+  position: relative;
+  .row {
+    display: flex;
+    > * {
+      flex: 1;
+    }
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 250%;
+    color: $dark-blue;
+  }
+
+  &__text {
+    margin: 2rem 0;
+    font-size: $font-size;
+  }
+
+  &__content {
+    padding-right: 3rem;
+  }
+
+  &__image {
+    position: relative;
+    img {
+      margin-right: -5rem;
     }
   }
 }
