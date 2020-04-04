@@ -15,10 +15,12 @@ body {
   &__title {
     font-size: 200%;
     margin-bottom: 1rem;
+    color: $dark-accent;
     text-align: center;
   }
 
   &__desc {
+    color: $grayish-blue-neutral;
     text-align: center;
     margin: auto;
     font-size: $font-size;
@@ -78,7 +80,7 @@ body {
 // Main Header
 .main-header {
   padding: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   .row {
     display: flex;
     align-items: center;
@@ -87,9 +89,12 @@ body {
 
   li {
     display: inline-block;
-    margin-left: 2rem;
+    margin-left: 3rem;
   }
 
+  .btn {
+    padding: 0.6rem 2rem;
+  }
   li a {
     font-size: 90%;
     display: inline-block;
@@ -107,9 +112,6 @@ body {
   margin: 5rem 0 8rem 0;
   .row {
     display: flex;
-    > * {
-      flex: 1;
-    }
   }
 
   h1 {
@@ -119,18 +121,22 @@ body {
 
   &__text {
     margin: 2rem 0;
+    color: $grayish-blue-neutral;
     font-size: $font-size;
   }
 
   &__content {
     padding-right: 3rem;
+    flex: 1;
   }
 
   &__image {
     position: relative;
     z-index: 10;
+    flex: 1.6;
+    width: 60%;
     img {
-      width: 100%;
+      flex: 1;
       float: right;
       margin-top: -3rem;
       margin-right: -6rem;
@@ -148,7 +154,6 @@ body {
   .section {
     &__title {
       text-align: center;
-      color: $dark-accent;
     }
 
     &__desc {
@@ -237,7 +242,7 @@ body {
 
 .download {
   &__content {
-    margin: 10rem 0rem 4rem 0;
+    margin: 8rem 0rem 2rem 0;
   }
 
   .browser {
@@ -293,15 +298,57 @@ body {
         font-size: 90%;
       }
 
-      &--1 {
-      }
-
       &--2 {
         margin-top: 5rem;
       }
       &--3 {
         margin-top: 10rem;
       }
+    }
+  }
+}
+
+.faqs {
+  margin: 5rem auto;
+  text-align: center;
+  .questions {
+    margin-bottom: 4rem;
+  }
+
+  .question {
+    margin: auto;
+    width: 50%;
+    text-align: left;
+
+    &:first-child {
+      header {
+        border-top: 1px solid #dadada;
+      }
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      color: $dark-accent;
+      align-items: center;
+      border-bottom: 1px solid #dadada;
+      cursor: pointer;
+      transition: 0.4s ease-out;
+      padding: 1.5rem 0;
+      &:hover {
+        color: $danger;
+      }
+
+      &--icon {
+        width: 20px;
+        height: 10px;
+      }
+    }
+
+    &__answer {
+      line-height: 2;
+      padding: 2rem 0;
+      display: none;
     }
   }
 }

@@ -36,10 +36,12 @@ body {
 .section__title {
   font-size: 200%;
   margin-bottom: 1rem;
+  color: #252b46;
   text-align: center;
 }
 
 .section__desc {
+  color: #9194a1;
   text-align: center;
   margin: auto;
   font-size: 18px;
@@ -99,7 +101,7 @@ body {
 
 .main-header {
   padding: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .main-header .row {
@@ -116,7 +118,11 @@ body {
 
 .main-header li {
   display: inline-block;
-  margin-left: 2rem;
+  margin-left: 3rem;
+}
+
+.main-header .btn {
+  padding: 0.6rem 2rem;
 }
 
 .main-header li a {
@@ -142,12 +148,6 @@ body {
   display: flex;
 }
 
-.hero .row > * {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
 .hero h1 {
   font-size: 250%;
   color: #252b46;
@@ -155,20 +155,30 @@ body {
 
 .hero__text {
   margin: 2rem 0;
+  color: #9194a1;
   font-size: 18px;
 }
 
 .hero__content {
   padding-right: 3rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .hero__image {
   position: relative;
   z-index: 10;
+  -webkit-box-flex: 1.6;
+      -ms-flex: 1.6;
+          flex: 1.6;
+  width: 60%;
 }
 
 .hero__image img {
-  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   float: right;
   margin-top: -3rem;
   margin-right: -6rem;
@@ -191,7 +201,6 @@ body {
 
 .features .section__title {
   text-align: center;
-  color: #252b46;
 }
 
 .features .section__desc {
@@ -304,7 +313,7 @@ body {
 }
 
 .download__content {
-  margin: 10rem 0rem 4rem 0;
+  margin: 8rem 0rem 2rem 0;
 }
 
 .download .browser {
@@ -373,5 +382,57 @@ body {
 
 .download .browser__card--3 {
   margin-top: 10rem;
+}
+
+.faqs {
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.faqs .questions {
+  margin-bottom: 4rem;
+}
+
+.faqs .question {
+  margin: auto;
+  width: 50%;
+  text-align: left;
+}
+
+.faqs .question:first-child header {
+  border-top: 1px solid #dadada;
+}
+
+.faqs .question__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #252b46;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dadada;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  padding: 1.5rem 0;
+}
+
+.faqs .question__header:hover {
+  color: #fa5757;
+}
+
+.faqs .question__header--icon {
+  width: 20px;
+  height: 10px;
+}
+
+.faqs .question__answer {
+  line-height: 2;
+  padding: 2rem 0;
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
