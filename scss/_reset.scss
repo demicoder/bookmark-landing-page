@@ -6,3 +6,17 @@
   border: 0;
   box-sizing: border-box;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}

@@ -1,2 +1,56 @@
 @import "variables";
 @import "reset";
+
+body {
+  font-family: $font-stack;
+}
+
+// Utilities
+.row {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.btn {
+  &__primary {
+    background: $accent;
+  }
+
+  &__danger {
+    background: $danger;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: $font-weight-bold;
+    border: 2px solid $danger;
+    &:hover {
+      background: transparent;
+      color: $danger;
+    }
+  }
+}
+
+// Main Header
+.main-header {
+  padding: 3rem;
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 2rem;
+  }
+
+  li a {
+    font-size: 90%;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 0.4s ease-out;
+    &:hover {
+      color: $danger;
+    }
+  }
+}
