@@ -46,38 +46,6 @@ const setTabs = () => {
   question.classList.add('question__answer--inactive');
 });
 
-const removeActiveFAQ = () => {
-  const activeAnswer = document.querySelector('.question__answer--active');
-  if (activeAnswer) {
-    activeAnswer.classList.remove('question__answer--active');
-    activeAnswer.classList.add('question__answer--inactive');
-  }
-};
-
-const setActiveFAQ = e => {
-  elements.faqHeaders.forEach(faqLink => {
-    faqLink.addEventListener('click', e => {
-      e.preventDefault();
-
-      const questionHeader = e.target.closest('header');
-
-      [...elements.faqHeaders].forEach(header =>
-        header.classList.remove('question__header--active')
-      );
-
-      removeActiveFAQ();
-      questionHeader.classList.add('question__header--active');
-
-      const closestAnswer = questionHeader.nextElementSibling;
-
-      if (closestAnswer) {
-        closestAnswer.classList.remove('question__answer--inactive');
-        closestAnswer.classList.add('question__answer--active');
-      }
-    });
-  });
-};
-
 setActiveFAQ();
 removeActiveFAQ();
 setTabs();
