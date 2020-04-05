@@ -89,9 +89,13 @@ setTabs();
 
 elements.showMobileMenu.addEventListener('click', e => {
   elements.mobileMenu.style.display = 'block';
+  document.documentElement.style.overflow = 'hidden';
+  document.body.scroll = 'no';
   elements.mobileMenu.classList.add('mobile__show');
 });
 
 elements.closeMobileMenu.addEventListener('click', e => {
+  document.documentElement.style.overflow = 'scroll';
+  document.body.scroll = 'yes';
   elements.mobileMenu.style.display = 'none';
 });
