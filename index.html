@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookmark</title>
     <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/index.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -74,17 +79,17 @@
       <div class="tabs">
         <div class="row">
           <div class="tabs__header">
-            <h3 class="tabs__header--active">
+            <h3 data-tab="tab__1" class="tabs__header--active">
               <a href="#">Simple Bookmarking</a>
             </h3>
-            <h3><a href="#">Speedy Searching</a></h3>
-            <h3><a href="#">Easy Sharing</a></h3>
+            <h3 data-tab="tab__2"><a href="#">Speedy Searching</a></h3>
+            <h3 data-tab="tab__3"><a href="#">Easy Sharing</a></h3>
           </div>
         </div>
 
         <div class="tabs__content">
           <!--Tab 1 start -->
-          <div class="tab">
+          <div class="tab tab__1">
             <div class="row">
               <div class="tab__content">
                 <div class="tab__img">
@@ -109,7 +114,7 @@
           <!-- Tab 1 end -->
 
           <!--Tab 2 start -->
-          <div class="tab">
+          <div class="tab tab__2">
             <div class="row">
               <div class="tab__content">
                 <div class="tab__img">
@@ -135,7 +140,7 @@
         <!-- Tab 2 end -->
 
         <!--Tab 3 start -->
-        <div class="tab">
+        <div class="tab tab__3">
           <div class="row">
             <div class="tab__content">
               <div class="tab__img">

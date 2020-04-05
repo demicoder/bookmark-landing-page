@@ -1,5 +1,5 @@
-@import "variables";
-@import "reset";
+@import 'variables';
+@import 'reset';
 
 body {
   font-family: $font-stack;
@@ -176,6 +176,8 @@ body {
     &:after {
       @include section-background;
       left: 0;
+      height: 300px;
+      top: 300px;
       transform: rotate(180deg);
     }
 
@@ -205,10 +207,10 @@ body {
       }
 
       &--active {
+        border-bottom: 4px solid $danger !important;
         a {
           color: $dark-accent !important;
         }
-        border-bottom: 4px solid $danger !important;
       }
     }
 
@@ -246,6 +248,7 @@ body {
       &__text {
         margin: 2rem 0;
         color: $grayish-blue-neutral;
+        line-height: 1.5;
       }
     }
   }
@@ -298,7 +301,7 @@ body {
         height: 3px;
         background: {
           repeat: repeat-x;
-          image: url("./../images/bg-dots.svg");
+          image: url('./../images/bg-dots.svg');
         }
         width: 100%;
       }
@@ -390,13 +393,13 @@ body {
       display: block;
     }
 
-    input[type="email"] {
+    input[type='email'] {
       flex: 1.5;
       margin-right: 1rem;
       padding: 8px 15px;
       border-radius: 5px;
     }
-    input[type="submit"] {
+    input[type='submit'] {
       flex: 0.5;
       &:hover {
         background: #fff;
@@ -535,7 +538,6 @@ body {
   .section {
     padding-right: 2rem;
     padding-left: 2rem;
-    margin-right: 2rem;
     &__desc {
       width: 100%;
     }
@@ -558,6 +560,7 @@ body {
 
       &__header {
         width: 100%;
+        display: block;
       }
 
       .tab {
@@ -634,7 +637,7 @@ body {
         width: 100%;
       }
 
-      input[type="email"] {
+      input[type='email'] {
         padding: 15px;
       }
 

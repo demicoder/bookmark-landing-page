@@ -11,8 +11,8 @@ $dark-accent: $dark-blue;
 
 // 2. Typograpgy
 // (https://fonts.google.com/specimen/Rubik)
-$font-stack: "system-ui", "sans-serif";
-// $font-stack: "Rubik", "sans-serif";
+// $font-stack: "system-ui", "sans-serif";
+$font-stack: 'Rubik', 'sans-serif';
 $font-size: 18px;
 $font-weight-normal: 400;
 $font-weight-bold: 500;
@@ -20,7 +20,7 @@ $font-weight-bold: 500;
 // 3. Mixins
 
 @mixin section-background {
-  content: "";
+  content: '';
   position: absolute;
   height: 85%;
   width: 40%;

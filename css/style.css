@@ -31,7 +31,7 @@ input[type="submit"] {
 }
 
 body {
-  font-family: "system-ui", "sans-serif";
+  font-family: "Rubik", "sans-serif";
 }
 
 .row {
@@ -199,7 +199,7 @@ body {
 }
 
 .hero:after {
-  content: "";
+  content: '';
   position: absolute;
   height: 85%;
   width: 40%;
@@ -227,7 +227,7 @@ body {
 }
 
 .features .tabs:after {
-  content: "";
+  content: '';
   position: absolute;
   height: 85%;
   width: 40%;
@@ -236,6 +236,8 @@ body {
   right: 0;
   border-radius: 20rem 0 0 20rem;
   left: 0;
+  height: 300px;
+  top: 300px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -324,6 +326,7 @@ body {
 .features .tabs .tab__text {
   margin: 2rem 0;
   color: #9194a1;
+  line-height: 1.5;
 }
 
 .download__content {
@@ -481,7 +484,7 @@ body {
   display: block;
 }
 
-.contact__form input[type="email"] {
+.contact__form input[type='email'] {
   -webkit-box-flex: 1.5;
       -ms-flex: 1.5;
           flex: 1.5;
@@ -490,29 +493,29 @@ body {
   border-radius: 5px;
 }
 
-.contact__form input[type="submit"] {
+.contact__form input[type='submit'] {
   -webkit-box-flex: 0.5;
       -ms-flex: 0.5;
           flex: 0.5;
 }
 
-.contact__form input[type="submit"]:hover {
+.contact__form input[type='submit']:hover {
   background: #fff;
 }
 
-.contact__form input[type="submit"]::-webkit-input-placeholder {
+.contact__form input[type='submit']::-webkit-input-placeholder {
   color: #9194a1;
 }
 
-.contact__form input[type="submit"]:-ms-input-placeholder {
+.contact__form input[type='submit']:-ms-input-placeholder {
   color: #9194a1;
 }
 
-.contact__form input[type="submit"]::-ms-input-placeholder {
+.contact__form input[type='submit']::-ms-input-placeholder {
   color: #9194a1;
 }
 
-.contact__form input[type="submit"]::placeholder {
+.contact__form input[type='submit']::placeholder {
   color: #9194a1;
 }
 
@@ -646,7 +649,6 @@ body {
   .section {
     padding-right: 2rem;
     padding-left: 2rem;
-    margin-right: 2rem;
   }
   .section__desc {
     width: 100%;
@@ -662,6 +664,7 @@ body {
   }
   .features .tabs__header {
     width: 100%;
+    display: block;
   }
   .features .tabs .tab__content {
     -webkit-box-orient: vertical;
@@ -726,7 +729,7 @@ body {
             flex: 1;
     width: 100%;
   }
-  .contact__form input[type="email"] {
+  .contact__form input[type='email'] {
     padding: 15px;
   }
   .contact__form .btn {
