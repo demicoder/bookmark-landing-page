@@ -352,6 +352,15 @@ body {
       &:hover {
         color: $danger;
       }
+      &--active {
+        svg {
+          animation: rotate 1s forwards;
+          path {
+            stroke: $danger;
+          }
+        }
+        border-bottom: 0;
+      }
 
       &--icon {
         width: 20px;
@@ -362,7 +371,15 @@ body {
     &__answer {
       line-height: 2;
       padding: 2rem 0;
+    }
+
+    &__answer--inactive {
       display: none;
+    }
+
+    &__answer--active {
+      display: block;
+      animation: fadeIn 1s;
     }
   }
 }
@@ -457,7 +474,7 @@ body {
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .row {
     padding: 1rem 0;
   }
@@ -555,7 +572,9 @@ body {
       }
 
       &:after {
-        display: none;
+        // display: none;
+        left: -50px;
+        top: 350px;
       }
 
       &__header {
