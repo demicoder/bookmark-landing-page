@@ -631,13 +631,17 @@ body {
     position: fixed;
     z-index: 11;
     color: #fff;
-    display: block;
     top: 0;
     background: rgba($dark-accent, 0.95);
     height: 100vh;
     width: 100%;
     padding: 3rem;
     overflow: hidden;
+
+    &__show {
+      animation: fadeIn 0.3s;
+    }
+
     &__header {
       padding-top: 3px;
       justify-content: space-between;
@@ -665,6 +669,17 @@ body {
       padding-top: 1rem;
       padding-bottom: 1rem;
       margin-top: 2rem;
+    }
+
+    &__icons {
+      margin: 0 auto;
+      margin-top: 5rem;
+      display: block;
+      width: 100%;
+      text-align: center;
+      a {
+        margin: 0 1rem;
+      }
     }
   }
 

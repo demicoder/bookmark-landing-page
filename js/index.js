@@ -3,7 +3,10 @@ const elements = {
   tabLink: document.querySelectorAll('.tabs__header h3 a'),
   tabHeaders: document.querySelectorAll('.tabs__header h3'),
   faqHeaders: document.querySelectorAll('.question__header'),
-  faqQuestions: document.querySelectorAll('.question__answer')
+  faqQuestions: document.querySelectorAll('.question__answer'),
+  showMobileMenu: document.querySelector('.menu-icon'),
+  closeMobileMenu: document.querySelector('.mobile__close'),
+  mobileMenu: document.querySelector('.mobile')
 };
 
 const setTabs = () => {
@@ -46,6 +49,49 @@ const setTabs = () => {
   question.classList.add('question__answer--inactive');
 });
 
+const removeActiveFAQ = () => {
+  const activeAnswer = document.querySelector('.question__answer--active');
+  if (activeAnswer) {
+    activeAnswer.classList.remove('question__answer--active');
+    activeAnswer.classList.add('question__answer--inactive');
+  }
+};
+
+const setActiveFAQ = e => {
+  elements.faqHeaders.forEach(faqLink => {
+    faqLink.addEventListener('click', e => {
+      e.preventDefault();
+
+      const questionHeader = e.target.closest('header');
+
+      [...elements.faqHeaders].forEach(header =>
+        header.classList.remove('question__header--active')
+      );
+
+      removeActiveFAQ();
+      questionHeader.classList.add('question__header--active');
+
+      const closestAnswer = questionHeader.nextElementSibling;
+
+      if (closestAnswer) {
+        closestAnswer.classList.remove('question__answer--inactive');
+        closestAnswer.classList.add('question__answer--active');
+      }
+    });
+  });
+};
+
+// Mobile menu
+
 setActiveFAQ();
 removeActiveFAQ();
 setTabs();
+
+elements.showMobileMenu.addEventListener('click', e => {
+  elements.mobileMenu.style.display = 'block';
+  elements.mobileMenu.classList.add('mobile__show');
+});
+
+elements.closeMobileMenu.addEventListener('click', e => {
+  elements.mobileMenu.style.display = 'none';
+});

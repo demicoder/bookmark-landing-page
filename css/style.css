@@ -6,6 +6,7 @@
   }
   100% {
     opacity: 1;
+    display: block;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -19,6 +20,7 @@
   }
   100% {
     opacity: 1;
+    display: block;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -776,13 +778,16 @@ body {
     position: fixed;
     z-index: 11;
     color: #fff;
-    display: block;
     top: 0;
     background: rgba(37, 43, 70, 0.95);
     height: 100vh;
     width: 100%;
     padding: 3rem;
     overflow: hidden;
+  }
+  .mobile__show {
+    -webkit-animation: fadeIn 0.3s;
+            animation: fadeIn 0.3s;
   }
   .mobile__header {
     padding-top: 3px;
@@ -815,6 +820,16 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: 2rem;
+  }
+  .mobile__icons {
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .mobile__icons a {
+    margin: 0 1rem;
   }
   .hero h1 {
     font-size: 200%;
