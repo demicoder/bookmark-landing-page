@@ -811,7 +811,7 @@ body {
     border-top: 1px solid #dadada;
   }
   .mobile li a {
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     display: block;
     width: 100%;
     text-align: center;
@@ -827,8 +827,8 @@ body {
     margin: 0 auto;
     position: absolute;
     bottom: 5rem;
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
+    -webkit-transform: translateX(90%);
+            transform: translateX(90%);
   }
   .mobile__icons a {
     margin: 0 1rem;
@@ -887,6 +887,12 @@ body {
   }
   .main-footer__social-icons p {
     margin: 1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero h1 {
+    font-size: 150%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -573,7 +573,6 @@ body {
       }
 
       &:after {
-        // display: none;
         left: -50px;
         top: 350px;
       }
@@ -658,7 +657,7 @@ body {
     }
 
     li a {
-      padding: 0.5rem 0;
+      padding: 1rem 0;
       display: block;
       width: 100%;
       text-align: center;
@@ -675,7 +674,7 @@ body {
       margin: 0 auto;
       position: absolute;
       bottom: 5rem;
-      transform: translateX(50%);
+      transform: translateX(90%);
 
       a {
         margin: 0 1rem;
@@ -746,6 +745,14 @@ body {
       p {
         margin: 1rem;
       }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .hero {
+    h1 {
+      font-size: 150%;
     }
   }
 }
