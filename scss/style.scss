@@ -144,7 +144,7 @@ body {
     z-index: 10;
     flex: 1.6;
     width: 60%;
-    img {
+    &--img {
       flex: 1;
       float: right;
       margin-top: -3rem;
@@ -512,7 +512,7 @@ body {
     &__image {
       display: block;
       width: 100%;
-      img {
+      &--img {
         margin: auto;
       }
     }
@@ -689,7 +689,7 @@ body {
 
     &__image {
       text-align: center;
-      img {
+      &--img {
         width: 95%;
         margin: auto;
       }

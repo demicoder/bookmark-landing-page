@@ -240,7 +240,7 @@ body {
   width: 60%;
 }
 
-.hero__image img {
+.hero__image--img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -687,7 +687,7 @@ body {
     display: block;
     width: 100%;
   }
-  .hero__image img {
+  .hero__image--img {
     margin: auto;
   }
   .download__content {
@@ -839,7 +839,7 @@ body {
   .hero__image {
     text-align: center;
   }
-  .hero__image img {
+  .hero__image--img {
     width: 95%;
     margin: auto;
   }
